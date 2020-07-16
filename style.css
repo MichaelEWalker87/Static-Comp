@@ -1,1 +1,29 @@
+.header{
+  display: flex;
+}
 
+.profileIcon{
+  width: 3%;
+  height: auto;
+  order: 8;
+  align-items: flex-start;
+}
+
+.profileIconText{
+  order: 9;
+  align-items: center;
+}
+.prfileDropDownIcon{
+  width: 3%;
+  height: auto;
+  order: 10;
+}
+.headerIcon{
+  width: 12%;
+  height: auto;
+  order: 11;
+}
+.icons{
+  width: 4%;
+  height: auto;
+}
