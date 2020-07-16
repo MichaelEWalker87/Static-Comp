@@ -1,22 +1,26 @@
 .header{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:baseline;
 }
 
 .profileIcon{
   width: 3%;
   height: auto;
   order: 8;
-  align-items: flex-start;
+  align-self: flex-start;
 }
 
 .profileIconText{
   order: 9;
-  align-items: center;
+  align-self: flex-start;
 }
 .prfileDropDownIcon{
   width: 3%;
   height: auto;
   order: 10;
+  align-self: flex-start;
 }
 .headerIcon{
   width: 12%;
@@ -26,4 +30,8 @@
 .icons{
   width: 4%;
   height: auto;
+  align-self: flex-end;
+}
+.iconText{
+  align-self: flex-end;
 }
