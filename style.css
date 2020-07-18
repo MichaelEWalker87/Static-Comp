@@ -1,37 +1,70 @@
-.header{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items:baseline;
-}
-
-.profileIcon{
-  width: 3%;
+.profile-top-right img {
+  display: grid;
+  width: 100px;
   height: auto;
-  order: 8;
-  align-self: flex-start;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
-.profileIconText{
-  order: 9;
-  align-self: flex-start;
+.profile-name {
+  grid-column-start: 8;
 }
-.prfileDropDownIcon{
-  width: 3%;
+.icon-button-left img {
+  width: 100px;
   height: auto;
-  order: 10;
-  align-self: flex-start;
 }
-.headerIcon{
-  width: 12%;
+.icon-button-left a {
+  display: inline-block;
+}
+.icon-button-left p {
+  margin-top: -3px;
+}
+.all-cards {
+  display: grid;
+  grid-template-rows: auto;
+  /* grid-template-columns: repeat(auto-fill,277px); */
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 40px;
+  grid-template-areas:
+    "pc-1 pc-2 pc-3 pc-4"
+    "pc-5 pc-6 pc-7 pc-8";
+}
+.all-cards img{
+  width: 100%;
   height: auto;
-  order: 11;
 }
-.icons{
-  width: 4%;
-  height: auto;
-  align-self: flex-end;
+.picture-card-1{
+  grid-area: pc-1;
 }
-.iconText{
-  align-self: flex-end;
+.picture-card-2{
+  grid-area: pc-2;
 }
+.picture-card-3{
+  grid-area: pc-3;
+}
+.picture-card-4{
+  grid-area: pc-4;
+}
+.picture-card-5{
+  grid-area: pc-5;
+}
+.picture-card-6{
+  grid-area: pc-6;
+}
+.picture-card-7{
+  grid-area: pc-7;
+}
+.picture-card-8{
+  grid-area: pc-8;
+}
+@media screen and (max-width: 400px){
+  .all-cards {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pc-1"
+      "pc-2"
+      "pc-3"
+      "pc-4"
+      "pc-5"
+      "pc-6"
+      "pc-7"
+      "pc-8"
+  }
