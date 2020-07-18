@@ -1,6 +1,11 @@
 .profile-top-right img {
+  display: grid;
   width: 100px;
   height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.profile-name {
+  grid-column-start: 8;
 }
 .icon-button-left img {
   width: 100px;
