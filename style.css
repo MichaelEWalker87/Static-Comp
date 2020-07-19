@@ -1,22 +1,77 @@
-.profile-top-right img {
-  display: grid;
-  width: 100px;
-  height: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.profile-top-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
+
 .profile-name {
-  grid-column-start: 8;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.profile-icon{
+  width: 29px;
+  height: 29px;
+  margin-right: 6px;
+}
+
+.profile-dropdown-icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.profile-dropdown-button{
+  display: grid;
+   place-self: center;
+   justify-items: end;
+}
+
+.icon-button-left ol {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+.icon-button-left{
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: baseline;
 }
 .icon-button-left img {
-  width: 100px;
+  margin-right: 5px;
+  margin-left: 15px;
+  width: 25px;
   height: auto;
 }
-.icon-button-left a {
-  display: inline-block;
+.header-icon-section{
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: 20px;
 }
-.icon-button-left p {
-  margin-top: -3px;
+.icon-button-left li > a{
+  display: flex;
+  flex-direction: row;
 }
+
+.icon-button-left li > p{
+  margin-left: 5px;
+}
+
+.header-icon{
+  -webkit-transform:scaleX(-1);
+  transform:scaleX(-1);
+  float: right;
+  margin-right: 50px;
+  width: 125px!important;
+  height: auto;
+}
+
+.mainBody {
+  display: grid;
+}
+
 .all-cards {
   display: grid;
   grid-template-rows: auto;
@@ -27,34 +82,74 @@
     "pc-1 pc-2 pc-3 pc-4"
     "pc-5 pc-6 pc-7 pc-8";
 }
+
 .all-cards img{
   width: 100%;
   height: auto;
 }
+
 .picture-card-1{
   grid-area: pc-1;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-2{
   grid-area: pc-2;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-3{
   grid-area: pc-3;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-4{
   grid-area: pc-4;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-5{
   grid-area: pc-5;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-6{
   grid-area: pc-6;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-7{
   grid-area: pc-7;
+  border-style: double;
+  border-color: red;
 }
+
 .picture-card-8{
   grid-area: pc-8;
+  border-style: double;
+  border-color: red;
 }
+
+@media screen and (max-width: 875px){
+  .all-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    grid-template-areas:
+      "pc-1 pc-2"
+      "pc-3 pc-4"
+      "pc-5 pc-6"
+      "pc-7 pc-8"
+  }
+}
+
 @media screen and (max-width: 400px){
   .all-cards {
     grid-template-columns: 1fr;
