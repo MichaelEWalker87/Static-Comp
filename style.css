@@ -103,11 +103,16 @@ body{
   opacity: .5;
   background-image: url(https://content.fortune.com/wp-content/uploads/2020/06/GettyImages-845134366-e1591304694649.jpg);
 }
+.titleText {
+  padding-left: 2rem;
+  font-size: 4rem;
+}
 .all-cards {
   display: grid;
   min-width: 375px;
   grid-template-rows: auto;
-  margin-right: 125px;
+  padding-left: 2rem;
+  padding-right: 9rem;
   grid-gap: 40px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
@@ -211,10 +216,29 @@ body{
   left:0;
   width: 100%;
   height:100%;
-  background-image: url(https://cutewallpaper.org/21/lego-background/LEGO-Kievan-Rus-Review-Freemanpedia.jpg);
+  background-image: url(https://res.cloudinary.com/hlrdjpezx/image/upload/v1387817074/ukbwa8sxdlxpci9df1d2.jpg);
 }
 
-@media screen and (max-width: 875px){
+@media screen and (max-width: 1024px){
+  .all-cards {
+    display: grid;
+    padding-right: 3rem;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 40px;
+    margin-right: 50px;
+    grid-template-areas:
+      "pc-1 pc-2 pc-3"
+      "pc-4 pc-5 pc-6"
+      "pc-7 pc-8 ."
+  }
+}
+
+@media screen and (max-width: 800px){
+  .titleText {
+    padding-left: 2rem;
+    font-size: 3rem;
+  }
   .all-cards {
     display: grid;
     grid-template-rows: auto;
@@ -229,19 +253,18 @@ body{
   }
 }
 
-@media  {
 
-}
-@media screen and (max-width: 400px){
-  /* .title-picture-card{
-    font-size: .5rem;
-    padding-left: .25rem;
+@media screen and (max-width: 500px){
+  .title-picture-card{
+    font-size: 1.5rem;
+    padding-left: .50em;
   }
   .card-text{
-    font-size: .25rem;
+    font-size: 1rem;
     padding-left: .25rem;
-  } */
+  }
   .all-cards {
+    padding-right: 6rem;
     grid-template-columns: 1fr;
     grid-template-areas:
       "pc-1"
@@ -251,6 +274,6 @@ body{
       "pc-5"
       "pc-6"
       "pc-7"
-      "pc-8"
+      "pc-8";
   }
 }
