@@ -1,62 +1,276 @@
-.profile-top-right img {
-  display: grid;
-  width: 100px;
-  height: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+@font-face {
+  font-family: "Legothick";
+  src: url("Legothick.ttf")format("truetype");
 }
+body{
+  font-family: "Legothick",sans-serif;
+  color:#FE0608;
+}
+.header{
+  position: relative;
+}
+.header-background{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  opacity: .5;
+  background-image: url(https://images5.alphacoders.com/497/thumb-1920-497397.gif);
+}
+.profile-top-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
 .profile-name {
-  grid-column-start: 8;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.profile-icon{
+  width: 29px;
+  height: 29px;
+  margin-right: 6px;
+}
+
+.profile-dropdown-icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.profile-dropdown-button{
+  display: grid;
+   place-self: center;
+   justify-items: end;
+}
+
+.icon-button-left ol {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+.icon-button-left{
+  font-size: 1.5rem;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: baseline;
 }
 .icon-button-left img {
-  width: 100px;
+  margin-right: 5px;
+  margin-left: 15px;
+  width: 40px;
   height: auto;
 }
-.icon-button-left a {
-  display: inline-block;
+.header-icon-section{
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: 20px;
 }
-.icon-button-left p {
-  margin-top: -3px;
+.icon-button-left li > a{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-button-left li > p{
+  margin-left: 5px;
+}
+
+.header-icon{
+  -webkit-transform:scaleX(-1);
+  transform:scaleX(-1);
+  float: right;
+  margin-right: 50px;
+  width: 125px!important;
+  height: auto;
+}
+
+.mainBody {
+  display: grid;
+  position: relative;
+}
+.body-background{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  opacity: .5;
+  background-image: url(https://content.fortune.com/wp-content/uploads/2020/06/GettyImages-845134366-e1591304694649.jpg);
+}
+.titleText {
+  padding-left: 2rem;
+  font-size: 4rem;
 }
 .all-cards {
   display: grid;
+  min-width: 375px;
   grid-template-rows: auto;
-  /* grid-template-columns: repeat(auto-fill,277px); */
-  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 2rem;
+  padding-right: 9rem;
   grid-gap: 40px;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
     "pc-1 pc-2 pc-3 pc-4"
     "pc-5 pc-6 pc-7 pc-8";
 }
-.all-cards img{
-  width: 100%;
-  height: auto;
+.title-picture-card{
+  font-size: 2rem;
+  padding-left: 1rem;
 }
+.card-text{
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+.yellow-lego-heads{
+  position: absolute;
+  width: 12%;
+  margin: 5px;
+}
+.yellow-lego-heads:hover{
+  transform: rotateY(45deg);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.image-card-top{
+  position: relative;
+}
+.image-card-top-init{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 2rem;
+  color: #FE0608;
+}
+.profile-picture{
+  width: 100%;
+  height: 15em;
+  z-index: 1;
+
+}
+
 .picture-card-1{
   grid-area: pc-1;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-2{
   grid-area: pc-2;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-3{
   grid-area: pc-3;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-4{
   grid-area: pc-4;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-5{
   grid-area: pc-5;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-6{
   grid-area: pc-6;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-7{
   grid-area: pc-7;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
+
 .picture-card-8{
   grid-area: pc-8;
+  border-style: double;
+  border-color: red;
+  position: relative;
 }
-@media screen and (max-width: 400px){
+.background-picture-card{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-image: url(https://res.cloudinary.com/hlrdjpezx/image/upload/v1387817074/ukbwa8sxdlxpci9df1d2.jpg);
+}
+
+@media screen and (max-width: 1024px){
   .all-cards {
+    display: grid;
+    padding-right: 3rem;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 40px;
+    margin-right: 50px;
+    grid-template-areas:
+      "pc-1 pc-2 pc-3"
+      "pc-4 pc-5 pc-6"
+      "pc-7 pc-8 ."
+  }
+}
+
+@media screen and (max-width: 800px){
+  .titleText {
+    padding-left: 2rem;
+    font-size: 3rem;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    margin-right: 50px;
+    grid-template-areas:
+      "pc-1 pc-2"
+      "pc-3 pc-4"
+      "pc-5 pc-6"
+      "pc-7 pc-8"
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .icon-button-left{
+    font-size: 1rem;
+  }
+  .title-picture-card{
+    font-size: 1.5rem;
+    padding-left: .50em;
+  }
+  .card-text{
+    font-size: 1rem;
+    padding-left: .25rem;
+  }
+  .all-cards {
+    padding-right: 6rem;
     grid-template-columns: 1fr;
     grid-template-areas:
       "pc-1"
@@ -66,5 +280,5 @@
       "pc-5"
       "pc-6"
       "pc-7"
-      "pc-8"
+      "pc-8";
   }
