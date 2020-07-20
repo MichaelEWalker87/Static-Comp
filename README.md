@@ -12,13 +12,13 @@ That style that is be ing copied can be see from the picture below. The theme ha
 
 project guide
 
-[Project guide](https://i.imgur.com/ogylgqO.jpg)
+![Project guide](https://i.imgur.com/ogylgqO.jpg)
 
 * The first step way to make a wire frame this was done in Excalidraw. This was an attempt to capture the project overall concepts and how many parts where needed.
 
 wireframe
 
-[wireframe](https://i.imgur.com/l7rLNPH.png)
+![wireframe](https://i.imgur.com/l7rLNPH.png)
 
 * my goal then was to make a mock up in html of all that parts I thought needed to be in the project. This was followed by then sectioning out each part of the static page into multiple sections both vertically and horizontally
 
@@ -49,6 +49,12 @@ This project main goal is to use HTML with CSS to make a responsive webpage. I w
 4. Using the Dev tools
 
 The Dev tools have been a huge part of this project. like I mention above I used the dev tools to compare what other major companies where doing on the sites they had up. In addition I would test out changes to my file with the dev tools before ever placing the changes into my main file.  
+
+
+### Final Product
+
+
+![Final product gif](https://i.imgur.com/Jv01wve.gif)
 
 ### Links for the Author Repository
 
