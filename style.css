@@ -91,8 +91,18 @@ body{
 
 .mainBody {
   display: grid;
+  position: relative;
 }
-
+.body-background{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  opacity: .5;
+  background-image: url(https://content.fortune.com/wp-content/uploads/2020/06/GettyImages-845134366-e1591304694649.jpg);
+}
 .all-cards {
   display: grid;
   min-width: 375px;
@@ -103,6 +113,10 @@ body{
   grid-template-areas:
     "pc-1 pc-2 pc-3 pc-4"
     "pc-5 pc-6 pc-7 pc-8";
+}
+.title-picture-card{
+  font-size: 2rem;
+  padding-left: 1rem;
 }
 .card-text{
   font-size: 1.25rem;
@@ -139,48 +153,65 @@ body{
   grid-area: pc-1;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-2{
   grid-area: pc-2;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-3{
   grid-area: pc-3;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-4{
   grid-area: pc-4;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-5{
   grid-area: pc-5;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-6{
   grid-area: pc-6;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-7{
   grid-area: pc-7;
   border-style: double;
   border-color: red;
+  position: relative;
 }
 
 .picture-card-8{
   grid-area: pc-8;
   border-style: double;
   border-color: red;
+  position: relative;
+}
+.background-picture-card{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-image: url(https://cutewallpaper.org/21/lego-background/LEGO-Kievan-Rus-Review-Freemanpedia.jpg);
 }
 
 @media screen and (max-width: 875px){
@@ -198,7 +229,18 @@ body{
   }
 }
 
+@media  {
+
+}
 @media screen and (max-width: 400px){
+  /* .title-picture-card{
+    font-size: .5rem;
+    padding-left: .25rem;
+  }
+  .card-text{
+    font-size: .25rem;
+    padding-left: .25rem;
+  } */
   .all-cards {
     grid-template-columns: 1fr;
     grid-template-areas:
